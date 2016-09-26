@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>getÊµÀý</title>
+<link rel='sheetsheet' type='text/css' href='../common.css'>
+<script type="text/javascript" src="../scripts/jquery-1.2.1.js">
+</script>
+<script type="text/javascript">
+$(function(){
+     $('#testButton').click(function(){
+	 $.get(
+	 'reflectData.jsp',
+	 {a:1,b:2,c:3},
+	 function(data){alert(data);}
+	 );
+	 });
+	 });
+</script>
+</head>
+<body>
+<button type="button" id="testButton">click me</button>
+</body>
+</html>
